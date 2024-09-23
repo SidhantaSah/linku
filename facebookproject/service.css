@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #262525;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: aliceblue;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.box, .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.box1, .c1 {
+    height: auto;
+    width: 90%;
+    max-width: 15rem;
+    border: 2px solid blue;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box1 h4, h2 {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.box1 p {
+    margin-top: 1rem;
+}
+
+.box1:hover {
+    background-color: #dadada;
+    color: black;
+}
+
+.c1 img {
+    width: 100%;
+    max-width: 15rem;
+    border: 2px solid blue;
+    transition: border-color 0.3s ease;
+}
+
+.c1 img:hover {
+    border-color: #262525;
+}
+
+/* Media Queries for mobile and tablet */
+@media (min-width: 480px) {
+    .box1, .c1 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .box, .container {
+        justify-content: space-between;
+    }
+    
+    .box1, .c1 {
+        width: 45%;
+    }
+}
+
+/* Media Queries for laptops and larger screens */
+@media (min-width: 1024px) {
+    .box1, .c1 {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .box1, .c1 {
+        width: 22%;
+    }
+}

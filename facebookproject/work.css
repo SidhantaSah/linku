@@ -1,0 +1,94 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-container, .right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525;
+    width: 55%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: blue;
+    width: 45%; /* Adjusted to ensure correct total width */
+}
+
+.container {
+    display: flex;
+}
+
+.content h1 {
+    color: white;
+}
+
+.box1, .box2, .box3 {
+    height: 13vw;
+    width: 38vw;
+    margin-top: 1rem;
+}
+
+.para {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: antiquewhite;
+}
+
+.heading {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: aqua;
+}
+
+p {
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    color: aliceblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .left-container, .right-container {
+        width: 100%;
+        height: auto;
+        padding-left: 1rem;
+    }
+
+    .right-container {
+        background: blue;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3 {
+        width: 90vw;
+        height: auto;
+    }
+
+    .para, .heading, p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-container, .right-container {
+        padding-left: 0.5rem;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100vw;
+    }
+}

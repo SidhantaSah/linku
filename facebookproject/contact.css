@@ -1,0 +1,225 @@
+/* body{
+    background-color: black;
+}
+.photo{
+    height:130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid ;
+}
+
+.photo img{
+    height:128px;
+    width: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right{
+    margin-top: 8rem;
+}
+.name{
+    width: 20vw;
+    height: 2vw;
+    border-radius: 0.5rem;
+}
+.btn{
+    background-color: blue;
+    color: aliceblue;
+    padding:0.5rem;
+    border-radius: 1rem;
+    width: 8vw;
+    margin-left: 4rem;
+}
+.head{
+    color:#fff;
+}
+.son{
+    color: #fff;
+}
+
+.icon-son{
+    gap:20rem;
+}
+
+.icon-son a{
+    font-size: 2rem;
+}
+
+.letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+.blank{
+    font-size:1.5rem ;
+    color: #fff;
+} */
+
+
+/* General Body Styles */
+/* Name Styles */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Photo Styles */
+.photo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Add a color to the border */
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Container Styles */
+/* .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    flex-wrap: wrap; Allow wrapping for smaller screens 
+}*/
+
+/* Right Container Styles */
+.right {
+    margin-top: 2rem; /* Adjust margin for better spacing */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 20vw; /* Set a consistent width */
+    height: 2.5rem; /* Set height for better visibility */
+    border-radius: 0.5rem;
+    background-color: #333; /* Background color for visibility */
+    color: #fff; /* Text color */
+    padding: 0.5rem; /* Add padding for better text spacing */
+    border: 1px solid #fff; /* Add a border for visibility */
+    box-sizing: border-box; /* Include padding in total width/height */
+    margin-bottom: 1rem; /* Space between inputs */
+}
+
+/* Button Styles */
+.btn {
+    background-color: blue;
+    color: aliceblue;
+    padding: 0.5rem 1rem; /* Padding for better button size */
+    border-radius: 1rem;
+    width: 20vw; /* Adjust button width for consistency */
+    margin-top: 1rem; /* Space above the button */
+    text-align: center;
+    display: inline-block;
+}
+
+/* Header Styles */
+.head {
+    color: #fff;
+    font-size: 2rem; /* Adjust font size for better visibility */
+    margin-top: 2rem;
+}
+
+/* Icon Styles */
+.icon-son {
+    display: flex;
+    gap: 2rem; /* Adjust gap for better spacing */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center icons */
+}
+
+.icon-son a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Letter Styles */
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.blank {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 30vw; /* Adjust width for smaller screens */
+        height: 2.5rem; /* Consistent height */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .btn {
+        width: 12vw; /* Adjust button size */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .head {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .blank {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        height: 80px;
+        width: 80px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 80vw; /* Further adjust width for very small screens */
+        height: 2.5rem; /* Consistent height */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .btn {
+        width: 16vw; /* Adjust button size */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .head {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .blank {
+        font-size: 1rem; /* Adjust font size */
+    }
+}

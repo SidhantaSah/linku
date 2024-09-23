@@ -1,0 +1,143 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+}
+
+/* Container and Calculator Styling */
+.container {
+    width: 100%;
+     height: auto; 
+    background: #f0f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #282c34; /* Dark background for the calculator */
+    padding: 20px;
+    border-radius: 15px;
+    /* width: 300px; */
+    /* max-width: 100%; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Display Styling */
+.display input {
+    width: 100%;
+    /* height: 70px; */
+    border-radius: 8px;
+    background: #1f232a;
+    color: white;
+    font-size: 2rem;
+    padding-right: 20px;
+    text-align: right;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+/* Button Styling */
+form input {
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #3b414c; /* Dark button background */
+    color: #33ffd8; /* Light blue text color */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form input:hover {
+    background-color: #505765; /* Lighter on hover */
+}
+
+/* Operator Button */
+form input.operator {
+    color: #ffdb63; /* Yellow for operator buttons */
+}
+
+/* Equal Button */
+form input.equal {
+    background: #ff6363; /* Red for equal button */
+    color: white;
+}
+
+form input.equal:hover {
+    background: #ff4545;
+}
+
+/* Text Center Styling */
+.text-center {
+    text-align: center;
+    font-size: 2rem;
+    color: #282c34;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for Laptops and Desktops */
+@media screen and (min-width: 769px) {
+    .calculator {
+        width: 350px;
+        padding: 20px;
+    }
+
+    form input {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .display input {
+        height: 70px;
+        font-size: 2rem;
+    }
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 768px) {
+    .calculator {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form input {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .display input {
+        height: 60px;
+        font-size: 1.75rem;
+    }
+}
+
+/* Responsive Design for Phones */
+@media screen and (max-width: 480px) {
+    form input {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .display input {
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .calculator {
+        padding: 10px;
+    }
+}

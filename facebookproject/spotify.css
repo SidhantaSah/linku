@@ -1,0 +1,285 @@
+ *{
+    margin:0;
+    font-family: Arial;
+    padding: 0;
+    border: border-box;
+}
+.navsearch{
+    height:7rem;
+    background-color: rgba(0, 0, 255, 0.723);
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlogo{
+    width:19rem;
+    height:6.8rem;
+    
+}
+.logo{ 
+    background-image: url(flipkkart.jpg);
+    background-size: cover;
+    height:6.8rem;
+    width: 19rem;
+    
+    
+}
+
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+}
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    width:620px;
+    height:40px;
+    border-radius: 4px;
+}
+.nav-search:hover {
+    border:2px solid black;
+}
+
+.search-input{
+        width:100%;
+        font-size: 1rem;
+        border: none;
+    
+    
+}
+
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.search-icon{
+    width:2rem;
+    color:black;
+    font-weight: 700;
+    font-size: 1.1rem;
+    position: relative;
+    top:10px;
+
+}
+
+.bar{
+    width:100%;
+    height:8rem;
+    background-color:whitesmoke;
+    margin-top: 10px;
+
+}
+
+.subbar{
+    display: flex;
+    justify-content:space-evenly ;
+      
+}
+.subbar h4{
+    margin-top: 6rem;
+}
+
+.heropage{
+    width:100%;
+    height: 13rem;
+    margin-top: 1rem;
+    background-image: url(product.png);
+    background-size: cover;
+}
+
+.heroine{
+    width:100%;
+    height: 20rem;
+    background-color: whitesmoke;
+    margin-top: 1rem;
+     
+}
+
+
+.villian{
+    margin-top: 2rem;
+    display: flex;
+    gap:0.5rem;
+}
+
+.box1{
+    width:25%;
+    height:15rem;
+    
+    background-image: url(oppo.jpg);
+    background-size: cover;
+}
+
+.box2{
+    width:25%;
+    height:15rem;
+    
+    background-image: url(samsung.png);
+    background-size: cover;
+    
+}
+
+.box3{
+    width:25%;
+    height:15rem;
+    
+    background-image: url(moto.png);
+    background-size: cover;
+}
+
+.box4{
+    width:25%;
+    height:15rem;
+    
+    background-image: url(motorela.jpg);
+    background-size: cover;
+}
+
+.box5{
+    width:25%;
+    height:15rem;
+    
+    background-image: url(vivo.png);
+    background-size: cover;
+}
+
+.box6{
+    width:20%;
+    height:15rem;
+    
+    background-image: url(iphone.png);
+    background-size: cover;
+}
+
+.director{
+    width:100%;
+    height: 16rem;
+    background-color: aliceblue;
+    
+    margin-top: 1rem;
+}
+.producer{
+    display: flex;
+    gap:0.5rem;
+}
+
+.content1{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(watch.jpg);
+    background-size: cover;
+}
+.content2{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(trimmer.jpg);
+    background-size: cover;
+}
+.content3{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(deo.webp);
+    background-size: cover;
+}
+
+
+
+
+.direct{
+    width:100%;
+    height: 16rem;
+    background-color: aliceblue;
+    
+    margin-top: 1rem;
+}
+.produce{
+    display: flex;
+    gap:0.5rem;
+}
+
+.cont1{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(box.jpg);
+    background-size: cover;
+}
+.cont2{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(noise.jpg);
+    background-size: cover;
+}
+.cont3{
+    width:34%;
+    height:15rem;
+    border: 2px solid black;
+    background-image: url(earbud.jpg);
+    background-size: cover;
+}
+
+footer {
+    margin-top:15px;
+}
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd;
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top:0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ 

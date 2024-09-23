@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+        
+    
+    <div class="photo">
+        <img src="sidhu.jpg" alt="">
+    </div>
+
+   <div class="container">
+    <div class="left">
+        <h2 class="head">CONTACT DETAILS</h2>
+    </div>
+    
+            <div class="right">
+                <form action="/register" method="post">
+                    <input type="text" name="Name" placeholder="Your Name" required class="name">
+                    <br><br>
+                    <input type="email" name="email" placeholder="Your Email" required class="email">
+                    <br><br>
+                    <input type="password" name="password" placeholder="password" required class="password">
+                    <br><br>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            </div>
+       <div class="letter">
+      <h4 class="blank" >made by sidhanta sahoo</h4>
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js";
+    import{getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBJw21F_mj-6rTWSYQaUqpEt3ENbfJMTE4",
+      authDomain: "authentication-d281b.firebaseapp.com",
+      databaseURL: "https://authentication-d281b-default-rtdb.firebaseio.com",
+      projectId: "authentication-d281b",
+      storageBucket: "authentication-d281b.appspot.com",
+      messagingSenderId: "856886187185",
+      appId: "1:856886187185:web:faae151c618ac72ff57e90"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database=getDatabase(app);
+    const auth= getAuth();
+
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent the default form submission
+
+        const name = document.querySelector("input[name='Name']").value;
+        const email = document.querySelector("input[name='email']").value;
+        const password = document.querySelector("input[name='password']").value;
+
+        try {
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            // Successfully registered
+            const user = userCredential.user;
+            console.log("User registered:", user);
+            // You can also save the name to your database here if needed
+        } catch (error) {
+            console.error("Error registering user:", error.message);
+            alert(error.message); // Show the error message
+        }
+    });
+  </script>
+</html>
